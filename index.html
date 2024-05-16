@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ELITE READERS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">ELITE READERS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="search()">GO</button>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ELITE READERS</h1>
+            <p>Find your next favorite novels, Adventurous novels, Love Novels, and Trending Novels today</p>
+        </div>
+        <div class="main-content">
+            <h2>Featured Novels</h2>
+            <div class="Novels">
+                <div class="Novel">
+                    <img src="shadow.jpg">
+                    <h3>WALK INTO THE SHADOW</h3>
+                    <p>Estella Darcy</p>
+                    <p>FREE</p>
+                    <ul>
+                        <li><a href="novel_walk into the shadow">Read "walk into the shadow"</a></li>
+                    </ul>
+                </div>
+                 <div class="Novel">
+                    <img src="blossoms.jpg">
+                    <h3>Blossoms of Savanna</h3>
+                    <p>Henry Ole Kulet</p>
+                    <p>FREE</p>
+                    <ul>
+                        <li><a href="novel_blossoms_of_savanna.html">Read "Blossoms of Savanna"</a></li>
+                    </ul>
+                </div>
+                <div class="Novel">
+                    <img src="invisible man.jpg">
+                    <h3>INVISIBLE MAN</h3>
+                    <p>Ralph Ellison</p>
+                    <p>FREE</p>
+                    <ul>
+                        <li><a href="novel_invisible man.html">Read "Invisible man"</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 ELITE READERS. All rights reserved</p>
+    </footer>
+
+    <script>
+        function search() {
+            var searchInput = document.getElementById("searchInput").value;
+            // Here you can perform actions based on the search input
+            console.log("User searched for: " + searchInput);
+            // For example, you can redirect to a search results page
+            window.location.href = "search_results.html?query=" + searchInput;
+        }
+    </script>
+     <script>
+        function search() {
+            var searchInput = document.getElementById("searchInput").value;
+            // Here you can perform actions based on the search input
+            console.log("User searched for: " + searchInput);
+            // For example, you can redirect to a search results page
+            window.location.href = "search_results.html?query=" + searchInput;
+        }
+
+        // Function to display contact information when "Contact Us" link is clicked
+        document.getElementById("contactLink").addEventListener("click", function() {
+            alert("Contact Information:\nPhone: 0762551618\nEmail: priscilleratim44@gmail.com\nLocation: Along Kakoba Road");
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
